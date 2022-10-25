@@ -134,3 +134,84 @@ se eu enviar como null no telefone ele não envia nada, se eu incluir o nome do 
 
 ![](.README_images/a69463f4.png)
 
+## Métodos
+
+ - GET 
+Dados da URL(endpoint): query Parameters e Path parameters
+
+Dados do body(corpo da mensagem): Não tem
+
+Uso(boa prática):
+    Usamos o get para pegar algum recurso
+    Com identificador pega um item
+    Com identificador pega uma lista de itens
+
+
+ - POST
+
+Dados na URL(endpoint):
+    Expostos na URL: path Parameters
+    Não expostos na URL: Query Parameters
+
+Dados no body(corpo da mensagem) -> é aqui no body que passamos os dados
+Texto, Json , Xml..
+
+Uso(boa prática)
+
+    Criar um recurso. ( salvar um recurso no BD, é salvar um recurso no arquivo, é salvar um recurso em memória 
+
+ - PUT
+
+Dados na URL(endpoint):query Parameters e Path parameters
+
+Dados no body(corpo da mensagem):
+   Texto, Json , Xml..
+Uso (boa prática):
+Alterar um recurso
+
+ - DELETE
+
+Dados na URL(endpoint):query Parameters e Path parameters
+
+Dados no body(corpo da mensagem):
+Não tem
+
+Uso (boa prática):
+Excluir um recurso
+
+## Crud
+
+C-> Create
+R-> Read
+U-> Update
+D-> Delete
+
+![](.README_images/c48a060b.png)
+
+
+## Injeção de Dependencia
+
+O nome Java Beans vem de broto de feijão.  Você pede um Objeto e ele brota.
+
+Injetamos um objeto no código e o java bean cria uma instancia dele automaticamente dentro do Container.
+
+O objeto criado já vem com todas as configurações necessárias prontas
+
+## Arquiteturas
+
+Arquitetura é a forma como os componentes do meu projeto se comportam ou do meu sistema.
+
+![](.README_images/5a49c2f1.png)
+![](.README_images/22ad46e6.png)
+
+![](.README_images/2a76a047.png)
+
+
+Nós temos um projeto que trabalha com duas arquiteturas de camada(layer) e MVC.
+
+Controler -> que cuida apenas dos endpoints, ela não possui lógica;
+Service -> service vai ter toda a lógica, os ifs , as validações
+Repository -> camada de persistencia
+
+![](.README_images/967bf9f1.png)
+

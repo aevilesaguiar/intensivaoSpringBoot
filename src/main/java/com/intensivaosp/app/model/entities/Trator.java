@@ -1,4 +1,4 @@
-package com.intensivaosp.app.model;
+package com.intensivaosp.app.model.entities;
 
 public class Trator {
 

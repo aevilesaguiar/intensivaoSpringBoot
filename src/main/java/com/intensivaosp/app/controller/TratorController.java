@@ -1,6 +1,6 @@
 package com.intensivaosp.app.controller;
 
-import com.intensivaosp.app.model.Trator;
+import com.intensivaosp.app.model.entities.Trator;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
